@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mundo do Tênis de Mesa</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOADING -->
+  <div id="loading">
+    <h1>🏓 LOADING...</h1>
+  </div>
+
+  <!-- PARTÍCULAS -->
+  <div class="particulas"></div>
+
+  <!-- HEADER -->
+  <header id="inicio">
+    <h1>🏓 Mundo do Tênis de Mesa</h1>
+  </header>
+
+  <!-- MENU -->
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#historia">História</a>
+    <a href="#jogadores">Jogadores</a>
+    <a href="#campeonatos">Campeonatos</a>
+    <a href="#ranking">Ranking</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#ia">IA</a>
+    <a href="#login">Login</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <!-- BOTÃO TEMA -->
+  <button id="temaBtn">
+    ☀️
+  </button>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <h2>Velocidade e Precisão</h2>
+
+    <p>
+      Conheça o incrível esporte do tênis de mesa.
+    </p>
+
+    <button onclick="mostrarMensagem()">
+      Saiba Mais
+    </button>
+
+  </section>
+
+  <!-- HISTÓRIA -->
+  <section id="historia" class="container">
+
+    <h2>Sobre o esporte</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>🏓 Regras</h3>
+
+        <p>
+          O objetivo é marcar pontos fazendo a bola tocar na mesa adversária.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>⚡ Velocidade</h3>
+
+        <p>
+          O tênis de mesa é um dos esportes mais rápidos do mundo.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🌍 Popularidade</h3>
+
+        <p>
+          Milhões de pessoas praticam o esporte ao redor do planeta.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- CURIOSIDADE -->
+    <div class="curiosidade">
+
+      <h2>Curiosidade</h2>
+
+      <p id="texto">
+        Clique no botão para ver uma curiosidade.
+      </p>
+
+      <button onclick="mostrarCuriosidade()">
+        Mostrar Curiosidade
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- JOGADORES -->
+  <section id="jogadores" class="jogadores">
+
+    <h2>🏓 Grandes Jogadores</h2>
+
+    <div class="players">
+
+      <div class="player-card">
+
+        <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=800&auto=format&fit=crop">
+
+        <h3>Ma Long</h3>
+
+        <p>
+          Considerado um dos maiores jogadores da história.
+        </p>
+
+      </div>
+
+      <div class="player-card">
+
+        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=800&auto=format&fit=crop">
+
+        <h3>Fan Zhendong</h3>
+
+        <p>
+          Conhecido pela velocidade e ataques extremamente rápidos.
+        </p>
+
+      </div>
+
+      <div class="player-card">
+
+        <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?q=80&w=800&auto=format&fit=crop">
+
+        <h3>Timo Boll</h3>
+
+        <p>
+          Um dos maiores nomes europeus do tênis de mesa.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ESTATÍSTICAS -->
+  <section class="estatisticas">
+
+    <h2>📊 Estatísticas</h2>
+
+    <div class="stats">
+
+      <div class="stat-box">
+        <h3>100 km/h</h3>
+        <p>Velocidade da bola</p>
+      </div>
+
+      <div class="stat-box">
+        <h3>1988</h3>
+        <p>Entrada nas Olimpíadas</p>
+      </div>
+
+      <div class="stat-box">
+        <h3>40M+</h3>
+        <p>Jogadores no mundo</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- MINI JOGO -->
+  <section class="mini-jogo">
+
+    <h2>🎮 Mini Jogo</h2>
+
+    <p>
+      Clique na bolinha para marcar pontos!
+    </p>
+
+    <h3>
+      Pontos:
+      <span id="pontos">0</span>
+    </h3>
+
+    <div id="bola"></div>
+
+  </section>
+
+  <!-- CAMPEONATOS -->
+  <section id="campeonatos" class="campeonatos">
+
+    <h2>🏆 Campeonatos Famosos</h2>
+
+    <div class="campeonato-cards">
+
+      <div class="camp-card">
+
+        <h3>Olimpíadas</h3>
+
+        <p>
+          O tênis de mesa entrou nas Olimpíadas em 1988.
+        </p>
+
+      </div>
+
+      <div class="camp-card">
+
+        <h3>Mundial ITTF</h3>
+
+        <p>
+          Um dos campeonatos mais importantes do esporte.
+        </p>
+
+      </div>
+
+      <div class="camp-card">
+
+        <h3>Copa do Mundo</h3>
+
+        <p>
+          Reúne os melhores jogadores do planeta.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- MÚSICA -->
+  <section class="musica">
+
+    <h2>🎵 Música</h2>
+
+    <button onclick="tocarMusica()">
+      Tocar Música
+    </button>
+
+    <button onclick="pausarMusica()">
+      Pausar Música
+    </button>
+
+    <audio id="musica">
+      <source
+      src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      type="audio/mpeg">
+    </audio>
+
+  </section>
+
+  <!-- RANKING -->
+  <section id="ranking" class="ranking">
+
+    <h2>🏆 Ranking Mundial</h2>
+
+    <table>
+
+      <tr>
+        <th>Ranking</th>
+        <th>Jogador</th>
+        <th>País</th>
+      </tr>
+
+      <tr>
+        <td>#1</td>
+        <td>Fan Zhendong</td>
+        <td>China</td>
+      </tr>
+
+      <tr>
+        <td>#2</td>
+        <td>Ma Long</td>
+        <td>China</td>
+      </tr>
+
+      <tr>
+        <td>#3</td>
+        <td>Timo Boll</td>
+        <td>Alemanha</td>
+      </tr>
+
+    </table>
+
+  </section>
+
+  <!-- GALERIA -->
+  <section id="galeria" class="galeria">
+
+    <h2>📸 Galeria</h2>
+
+    <div class="galeria-grid">
+
+      <img
+      src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1200&auto=format&fit=crop">
+
+      <img
+      src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?q=80&w=1200&auto=format&fit=crop">
+
+      <img
+      src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=1200&auto=format&fit=crop">
+
+    </div>
+
+  </section>
+
+  <!-- IA -->
+  <section id="ia" class="ia">
+
+    <h2>🤖 IA do Tênis de Mesa</h2>
+
+    <input
+    type="text"
+    id="pergunta"
+    placeholder="Pergunte algo...">
+
+    <button onclick="responderIA()">
+      Perguntar
+    </button>
+
+    <p id="respostaIA"></p>
+
+  </section>
+
+  <!-- LOGIN -->
+  <section id="login" class="login">
+
+    <h2>🔐 Área do Jogador</h2>
+
+    <input type="text" placeholder="Usuário">
+
+    <input type="password" placeholder="Senha">
+
+    <button onclick="fazerLogin()">
+      Entrar
+    </button>
+
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="contato">
+
+    <h2>📩 Contato</h2>
+
+    <p>
+      Entre em contato para saber mais sobre o mundo do tênis de mesa.
+    </p>
+
+    <button onclick="mostrarContato()">
+      Ver Contato
+    </button>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 - Site de Tênis de Mesa</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
